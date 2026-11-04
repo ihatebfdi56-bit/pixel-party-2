@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pixel Party is a collection of short educational games for students.">
+  <title>Pixel Party | Educational games for students</title>
+  <link rel="stylesheet" href="arcade.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" data-home><span class="brand-mark">✦</span><span>PIXEL<br><b>PARTY</b></span></a>
+      <nav class="nav-links" aria-label="Main navigation"><a href="#home" data-home>Home</a><a href="#games">Games</a><a href="arcade-shop.html">Shop</a></nav>
+      <div class="streak-pill"><span class="flame">🔥</span><span>You have played for <b id="streak">3</b> consecutive days.</span></div>
+    </header>
+
+    <main id="app">
+      <section class="home-view" id="home-view">
+        <div class="hero-copy">
+          <p class="eyebrow">Games for focused practice</p>
+          <h1>A place to practice<br><em>while you play.</em></h1>
+          <p class="hero-lede">Pixel Party offers short games that help students practice problem solving, number skills, and memory. Choose a game and work at your own pace.</p>
+          <a class="primary-button" href="#games">Choose a game to begin <span>→</span></a>
+          <div class="quick-stats"><span><b id="games-played">0</b><small>games played</small></span><span><b id="high-score">0</b><small>best score</small></span><span><b id="points">0</b><small>party points</small></span></div>
+        </div>
+        <div class="hero-art" aria-label="Colorful pixel rocket illustration"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"><i></i><i></i><i></i></div><div class="rocket"><span class="window"></span><span class="fin left"></span><span class="fin right"></span><span class="flame"></span></div><span class="star star-a">✦</span><span class="star star-b">✦</span><span class="star star-c">+</span></div>
+
+        <section class="game-zone" id="games" aria-labelledby="games-title">
+          <div class="section-heading"><div><p class="eyebrow">Games for independent practice</p><h2 id="games-title">Available games</h2></div><span class="tiny-note">You can play three short games without creating an account.</span></div>
+          <div class="game-grid">
+            <article class="game-card math-card"><div class="game-icon">🗝️</div><span class="tag">Math practice that takes about three minutes.</span><h3>Math Escape</h3><p>Solve the clues in order to find the code and leave the room.</p><button class="play-button" data-game="escape">Open this game <span>↗</span></button></article>
+            <article class="game-card sprint-card"><div class="game-icon">⚡</div><span class="tag">Math practice with a one-hundred-second limit.</span><h3>Number Sprint</h3><p>Work through as many problems as possible before the timer ends.</p><button class="play-button" data-game="sprint">Open this game <span>↗</span></button></article>
+            <article class="game-card memory-card"><div class="game-icon">🧠</div><span class="tag">Memory practice that takes about two minutes.</span><h3>Match Attack</h3><p>Turn over the cards and identify every matching pair.</p><button class="play-button" data-game="memory">Open this game <span>↗</span></button></article>
+          </div>
+        </section>
+      </section>
+
+      <section class="play-view" id="play-view" hidden>
+        <button class="back-button" id="back-home">← Return to the games page</button>
+        <div id="game-root"></div>
+      </section>
+    </main>
+    <footer><span>PIXEL PARTY</span><span>Pixel Party provides a calm place to practice.</span><span>Please play fairly and take time to learn.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="arcade.js"></script>
+</body>
+</html>

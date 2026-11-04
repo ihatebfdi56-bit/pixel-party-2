@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Party Shop</title>
+  <link rel="stylesheet" href="arcade.css">
+</head>
+<body>
+  <div class="app-shell shop-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span><span>PIXEL<br><b>PARTY</b></span></a>
+      <nav class="nav-links" aria-label="Shop navigation"><a href="index.html">Games</a><a href="arcade-shop.html">Shop</a></nav>
+      <div class="streak-pill">⭐ You currently have <b id="shop-points">0</b> points.</div>
+    </header>
+    <main class="shop-view">
+      <div class="shop-heading"><div><p class="eyebrow">Use your saved rewards</p><h1>Items for future games</h1><p class="hero-lede">Playing games earns points that can be exchanged for helpful modifiers. Your purchases remain saved on this device.</p></div><div class="shop-coin">✦<b id="shop-points-large">0</b><small>points available</small></div></div>
+      <p class="shop-note" id="shop-message" role="status">Complete a game to earn more points.</p>
+      <section class="shop-grid arcade-shop-grid" id="arcade-shop-grid" aria-label="Shop items"></section>
+    </main>
+    <footer><span>PIXEL PARTY</span><span>You do not need an account to use the shop.</span><span>Your points are saved on this device.</span></footer>
+  </div>
+  <script src="arcade-shop.js"></script>
+</body>
+</html>
